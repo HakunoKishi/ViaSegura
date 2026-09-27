@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VíaSegura Inclusiva</title>
+<style>
+:root{--ink:#17212b;--bg:#f5f7f8;--card:#fff;--accent:#1f5d73;--focus:#ffb000}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}
+.skip{position:absolute;left:-9999px;top:auto}.skip:focus{left:1rem;top:1rem;background:#fff;padding:.75rem;z-index:99}
+header{background:var(--ink);color:#fff;padding:1rem 5%;display:flex;gap:2rem;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.logo{font-size:1.35rem;font-weight:700}
+nav a{color:#fff;text-decoration:none;margin:.25rem .5rem;display:inline-block}
+a:focus,button:focus,input:focus,textarea:focus{outline:4px solid var(--focus);outline-offset:3px}
+main{max-width:1100px;margin:auto;padding:2rem 5%}
+.hero{background:#fff;border-radius:18px;padding:3rem;box-shadow:0 3px 15px #0001}
+h1{font-size:clamp(2rem,5vw,3.3rem);line-height:1.1}
+h2{margin-top:0}
+.buttons{display:flex;flex-wrap:wrap;gap:1rem;margin:1.5rem 0}
+button,.button{border:0;border-radius:10px;padding:.9rem 1.1rem;background:var(--ink);color:#fff;font-weight:700;text-decoration:none;display:inline-block;cursor:pointer}
+.secondary{background:#fff;color:var(--ink);border:2px solid var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1rem;margin:2rem 0}
+.card{background:var(--card);padding:1.4rem;border-radius:14px;border:1px solid #ccd3d8}
+.badge{display:inline-block;background:#e7f1f5;padding:.3rem .6rem;border-radius:999px;font-weight:700}
+form{background:#fff;padding:1.5rem;border-radius:14px}
+label{font-weight:700;display:block;margin-top:1rem}
+input,textarea{width:100%;padding:.8rem;margin-top:.4rem;border:2px solid #777;border-radius:8px;font:inherit}
+footer{background:var(--ink);color:#fff;padding:2rem 5%;margin-top:2rem}
+.small{font-size:.95rem;color:#4b5560}
+</style>
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido principal</a>
+<header>
+  <div class="logo">VíaSegura Inclusiva</div>
+  <nav aria-label="Navegación principal">
+    <a href="#inicio">Inicio</a><a href="#kit">Kit inteligente</a><a href="#seguro">Microseguro</a>
+    <a href="#seguridad">Conducción segura</a><a href="#ayuda">Ayuda</a>
+  </nav>
+</header>
+
+<main id="contenido">
+<section id="inicio" class="hero" aria-labelledby="titulo">
+  <span class="badge">Tecnología preventiva accesible</span>
+  <h1 id="titulo">Conduce seguro. Protege tu camino.</h1>
+  <p>VíaSegura Inclusiva propone tecnología preventiva de bajo costo para motociclistas y repartidores con menos acceso a protección formal.</p>
+  <div class="buttons">
+    <a class="button" href="#kit">Conocer el Kit</a>
+    <a class="button secondary" href="#seguro">Conocer el microseguro</a>
+  </div>
+  <p class="small">Diseño accesible: navegación por teclado, lenguaje claro, contraste visible, estructura semántica y adaptación a pantallas pequeñas.</p>
+</section>
+
+<section id="kit" aria-labelledby="kit-title">
+<h2 id="kit-title">Kit Inteligente Accesible</h2>
+<div class="grid">
+ <article class="card"><h3>Alertas de impacto</h3><p>Sensores telemáticos de bajo costo para cascos, con alertas automáticas ante una colisión.</p></article>
+ <article class="card"><h3>Microseguro integrado</h3><p>Cobertura médica inmediata activada automáticamente ante detección de colisión.</p></article>
+ <article class="card"><h3>Incentivos</h3><p>Reducción de tarifas y bonificaciones por hábitos de manejo seguros.</p></article>
+</div>
+</section>
+
+<section id="seguro" aria-labelledby="seguro-title" class="hero">
+<h2 id="seguro-title">Microseguro integrado</h2>
+<p>La propuesta contempla una cobertura asociada al sistema para reducir la falta de protección ante accidentes.</p>
+</section>
+
+<section id="seguridad" aria-labelledby="seg-title">
+<h2 id="seg-title">Conducción segura</h2>
+<div class="grid">
+ <article class="card"><h3>Aplicación móvil ligera</h3><p>Alertas, mapa de riesgos y soporte con bajo consumo de datos.</p></article>
+ <article class="card"><h3>Talleres comunitarios</h3><p>Puntos presenciales de asistencia técnica e instalación.</p></article>
+ <article class="card"><h3>Embajadores viales</h3><p>Líderes capacitados para compartir prácticas de conducción segura.</p></article>
+</div>
+</section>
+
+<section id="ayuda" aria-labelledby="help-title">
+<h2 id="help-title">Ayuda y contacto</h2>
+<form>
+<label for="nombre">Nombre</label>
+<input id="nombre" name="nombre" autocomplete="name">
+<label for="mensaje">¿En qué podemos ayudarte?</label>
+<textarea id="mensaje" name="mensaje" rows="5"></textarea>
+<p class="small">No compartas información médica o bancaria en este formulario de demostración.</p>
+<button type="submit">Enviar consulta</button>
+</form>
+</section>
+</main>
+<footer>
+<p><strong>VíaSegura Inclusiva</strong> — Propuesta de emprendimiento social.</p>
+<p>Accesibilidad como principio de diseño: perceptible, operable, comprensible y robusto.</p>
+</footer>
+</body>
+</html>
